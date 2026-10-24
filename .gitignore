@@ -1,0 +1,21 @@
+# 密钥与环境
+.env
+rag_env/
+venv/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# 构建产物（可由 prepare_data.py / build_index.py 重新生成）
+faiss_index/
+data/knowledge_base_raw.xlsx
+data/knowledge_base.xlsx
+eval/promptfoo_db/
+# 注：eval/ 下的评测报告与盲测明细作为效果证据保留上传
+
+# 临时文件
+_doc_extract.txt
+*.log

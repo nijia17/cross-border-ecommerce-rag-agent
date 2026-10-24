@@ -1,0 +1,18 @@
+# ===== 跨境电商 RAG 智能问答 Agent - 核心依赖 =====
+# Python 3.10+（开发验证环境：Python 3.12）
+langchain>=1.0,<2.0
+langchain-core>=1.0,<2.0
+langchain-classic>=0.1            # LangChain 1.x 中经典 ReAct Agent（AgentExecutor/create_react_agent）所在包
+langchain-community>=0.3          # FAISS / HuggingFaceBgeEmbeddings 集成
+langchain-openai>=0.3             # DeepSeek（OpenAI 兼容协议）
+langchain-text-splitters>=0.3
+faiss-cpu>=1.8,<2.0
+sentence-transformers>=2.7        # 本地加载 bge-small-zh-v1.5
+pandas>=2.0
+openpyxl>=3.1                     # 读写 Excel 知识库
+python-dotenv>=1.0
+PyYAML>=6.0                       # 生成 promptfooconfig.yaml
+
+# ===== 可选依赖 =====
+# dashscope>=1.20                 # 使用阿里云百炼（通义）Embedding / LLM 时安装
+# promptfoo 不通过 pip 安装，使用：npx promptfoo@latest eval（需 Node.js 18+）
